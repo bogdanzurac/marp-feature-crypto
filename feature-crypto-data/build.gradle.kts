@@ -1,3 +1,6 @@
+import dev.bogdanzurac.marp.build.projects
+import dev.bogdanzurac.marp.build.useArtifacts
+
 plugins {
     alias(libs.plugins.marp.feature.data)
     alias(libs.plugins.marp.publishing)
@@ -13,5 +16,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.marp.feature.crypto.domain)
+    implementation(
+        if (useArtifacts) libs.marp.feature.crypto.domain
+        else project(projects.featureCryptoDomain)
+    )
 }
