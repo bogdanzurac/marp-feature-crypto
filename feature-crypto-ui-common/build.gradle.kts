@@ -1,5 +1,5 @@
-import dev.bogdanzurac.marp.build.projects
-import dev.bogdanzurac.marp.build.useArtifacts
+import dev.bogdanzurac.marp.feature.crypto.projects
+import dev.bogdanzurac.marp.feature.crypto.useArtifacts
 
 plugins {
     alias(libs.plugins.marp.feature.ui)

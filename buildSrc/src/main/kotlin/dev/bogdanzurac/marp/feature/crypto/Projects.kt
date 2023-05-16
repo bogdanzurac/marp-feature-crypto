@@ -1,4 +1,4 @@
-package dev.bogdanzurac.marp.build
+package dev.bogdanzurac.marp.feature.crypto
 
 object projects {
     const val featureCryptoDomain = ":feature-crypto-domain"
